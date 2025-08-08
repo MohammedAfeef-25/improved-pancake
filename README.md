@@ -1,59 +1,58 @@
-Here’s a suggested **README.md** file for your project based on the information in the document:
-
----
-
 # Real-Time Object Size Estimation using YOLOv8
 
-## Introduction
+## 📌 Introduction
 
-This project implements a **real-time object detection and size estimation system** using **YOLOv8**. It estimates the physical dimensions (width and height) of detected objects from a video stream using a predefined pixel-to-centimeter ratio. This is a cost-effective solution that avoids complex calibration techniques.
+This project implements a **real-time object detection and size estimation system** using **YOLOv8**. It estimates the **physical dimensions (width and height)** of detected objects in a video stream using a predefined **pixel-to-centimeter ratio**. This is a cost-effective alternative to complex calibration methods.
 
 ---
 
-## Project Goals
+## 🎯 Project Goals
 
-* Implement a **real-time object detection system** using YOLOv8.
-* Estimate **object dimensions (in cm)** using a fixed pixel-to-cm ratio.
+* Build a **real-time object detection system** using YOLOv8.
+* Estimate object **dimensions (in cm)** using a fixed pixel-to-cm ratio.
 * Provide a simple and low-cost alternative to traditional calibration-based systems.
 
 ---
 
-## Problem Definition
+## 🧩 Problem Definition
 
-Most object detection systems identify objects but do not estimate their real-world size. In industries, manual measurement is time-consuming and prone to error. This project aims to automate size estimation without additional hardware or complex camera calibration.
+Most object detection systems only identify objects—they don't estimate their real-world sizes. In industrial settings, manual measurement is often time-consuming and error-prone. This project aims to **automate size estimation** without requiring extra hardware or complex camera calibration.
 
 ---
 
-## Proposed Methodology
+## 🔍 Methodology
 
-1. **Model Selection:** Use YOLOv8 for object detection.
-2. **Video Capture:** Capture real-time video using a webcam.
-3. **Detection:** Apply YOLO to detect objects and extract bounding box coordinates.
-4. **Size Estimation:** Convert bounding box dimensions from pixels to cm using a fixed ratio.
-5. **Visualization:** Display object name, confidence score, and estimated size on the video stream.
+1. **Model Selection**: Use YOLOv8 for object detection.
+2. **Video Capture**: Capture real-time video from a webcam.
+3. **Object Detection**: Apply YOLO to detect objects and extract bounding box coordinates.
+4. **Size Estimation**: Convert bounding box dimensions from pixels to centimeters using a predefined ratio.
+5. **Visualization**: Display object label, confidence score, and estimated dimensions on the video feed.
 
 ---
 
 ## ▶️ How to Run
 
-1. **Clone this repository**
+1. **Clone the Repository**
 
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/MohammedAfeef-25/real-time-size-estimator
+   cd real-time-size-estimator
    ```
-2. **Install dependencies**
+
+2. **Install Dependencies**
 
    ```bash
    pip install -r requirements.txt
    ```
-3. **Download YOLOv8 model**
+
+3. **Download YOLOv8 Model (Optional Test Run)**
 
    ```bash
    pip install ultralytics
    yolo detect predict model=yolov8n.pt
    ```
-4. **Run the application**
+
+4. **Run the Application**
 
    ```bash
    python main.py
@@ -61,14 +60,14 @@ Most object detection systems identify objects but do not estimate their real-wo
 
 ---
 
-## Requirements
+## ✅ Requirements
 
-* Python 3.8+
+* Python 3.8 or higher
 * OpenCV
+* NumPy
 * Ultralytics YOLOv8
-* Numpy
 
-Install all with:
+Install all at once:
 
 ```bash
 pip install opencv-python numpy ultralytics
@@ -76,26 +75,22 @@ pip install opencv-python numpy ultralytics
 
 ---
 
-## Results
+## 📷 Sample Results
 
-Examples:
-
-* **Smartphone** detected → Estimated Width: \~11.4 cm, Height: \~31.0 cm
-* **Water Bottle** detected → Dimensions displayed on live feed
-* **Toothbrush** detected → Estimated size shown in real-time
+* ✅ **Smartphone detected** → Estimated Width: \~11.4 cm, Height: \~31.0 cm
+* ✅ **Water Bottle detected** → Dimensions shown on the live feed
+* ✅ **Toothbrush detected** → Size estimated and displayed in real-time
 
 ---
 
-## Conclusion
+## ✅ Conclusion
 
-The system successfully detects objects and estimates their dimensions using a fixed ratio. It is suitable for scenarios where approximate size estimation is sufficient.
+This system successfully performs **object detection and approximate size estimation** using a fixed ratio. It's ideal for use cases where **approximate dimensions are sufficient** and high-precision calibration is unnecessary.
 
 ---
 
 ## 📚 References
 
-* [YOLOv8 - Ultralytics](https://github.com/ultralytics/ultralytics)
-* [YOLOv4 Paper](https://arxiv.org/abs/2004.10934)
-* [YOLO Original Paper](https://arxiv.org/abs/1506.02640)
-
----
+* [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
+* [YOLOv4: Optimal Speed and Accuracy](https://arxiv.org/abs/2004.10934)
+* [YOLO: You Only Look Once (Original Paper)](https://arxiv.org/abs/1506.02640)
