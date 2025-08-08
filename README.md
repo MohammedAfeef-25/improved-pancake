@@ -35,7 +35,7 @@ Most object detection systems only identify objects—they don't estimate their 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/MohammedAfeef-25/real-time-size-estimator
+   git clone https://github.com/MohammedAfeef-25/real-time-size-estimator.git
    cd real-time-size-estimator
    ```
 
