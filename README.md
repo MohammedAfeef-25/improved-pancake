@@ -39,47 +39,31 @@ Most object detection systems only identify objects—they don't estimate their 
    cd real-time-size-estimator
    ```
 
-2. **Install Dependencies**
+2. ✅ Requirements
+
+   * Python 3.8 or higher
+   * OpenCV
+   * NumPy
+   * Ultralytics YOLOv8
 
    ```bash
-   pip install -r requirements.txt
+   pip install opencv-python numpy ultralytics
    ```
 
-3. **Download YOLOv8 Model (Optional Test Run)**
+3. **Run the Application**
 
    ```bash
-   pip install ultralytics
-   yolo detect predict model=yolov8n.pt
+   python project.py
    ```
-
-4. **Run the Application**
-
-   ```bash
-   python main.py
-   ```
-
----
-
-## ✅ Requirements
-
-* Python 3.8 or higher
-* OpenCV
-* NumPy
-* Ultralytics YOLOv8
-
-Install all at once:
-
-```bash
-pip install opencv-python numpy ultralytics
-```
 
 ---
 
 ## 📷 Sample Results
 
-* ✅ **Smartphone detected** → Estimated Width: \~11.4 cm, Height: \~31.0 cm
-* ✅ **Water Bottle detected** → Dimensions shown on the live feed
-* ✅ **Toothbrush detected** → Size estimated and displayed in real-time
+<img width="523" height="404" alt="image" src="https://github.com/user-attachments/assets/51838bcf-b160-40e0-8021-6325b2890351" />
+<img width="545" height="432" alt="image" src="https://github.com/user-attachments/assets/c6f78c7e-6816-4912-934d-63439277a2f8" />
+
+
 
 ---
 
